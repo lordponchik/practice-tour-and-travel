@@ -1,0 +1,11 @@
+.trending__meta{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.trending-stories{
+    @include flex-box();
+}
+.trending-stories__list{
+    @include flex-item();
+}

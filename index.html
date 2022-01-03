@@ -135,74 +135,109 @@
           <img src="./images/guides.png" alt="Guides by Thousand Sunny" width="599" height="542" /></div>
        
       </section>
-      <section>
-        <h2>Testimonials</h2>
-        <!-- Добавить звезды -->
-        <p>
-          “Quisque in lacus a urna fermentum euismod. Integer mi nibh, dapibus ac scelerisque eu,
-          facilisis quis purus. Morbi blandit sit amet turpis nec”
-        </p>
-        <h3>Edward Newgate</h3>
-        <p>Founder Circle</p>
-        <img src="./images/edward-newgate.jpg" alt="Edward Newgate" width="384" height="491" />
-        <button type="button">&lt;</button>
-        <button type="button">&gt;</button>
+      <section class="testimonials section">
+        <div class="container">  <h2 class="testimonials__title">Testimonials</h2>
+          <div class="testimonials__flexbox"> 
+            <div class="testimonials__meta">
+            <ul class="testimonials__menu list">
+              <li class="testimonials__list">
+                <svg width="25" height="25" class="testimonials__icon">
+                  <use href="./images/sprite.svg#icon-star"></use>
+                </svg>
+              </li>
+              <li class="testimonials__list">
+                <svg width="25" height="25" class="testimonials__icon">
+                  <use href="./images/sprite.svg#icon-star"></use>
+                </svg>
+              </li>
+              <li class="testimonials__list">
+                <svg width="25" height="25" class="testimonials__icon">
+                  <use href="./images/sprite.svg#icon-star"></use>
+                </svg>
+              </li>
+              <li class="testimonials__list">
+                <svg width="25" height="25" class="testimonials__icon">
+                  <use href="./images/sprite.svg#icon-star"></use>
+                </svg>
+              </li>
+              <li class="testimonials__list">
+                <svg width="25" height="25" class="testimonials__icon"> 
+                  <use href="./images/sprite.svg#icon-star"></use>
+                </svg>
+              </li>
+            </ul>
+            <p class="testimonials__review">
+            “Quisque in lacus a urna fermentum euismod. Integer mi nibh, dapibus ac scelerisque eu,
+            facilisis quis purus. Morbi blandit sit amet turpis nec”
+          </p>
+          <h3 class="testimonials__name">Edward Newgate</h3>
+          <p class="testimonials__position">Founder Circle</p></div>
+          <div class="testimonials__img-block"> <img src="./images/edward-newgate.jpg" alt="Edward Newgate" width="384" height="491" class="testimonials__img"/>
+            <div class="testimonials__transition-review"> <button type="button" class="testimonials__review-btn">&lt;</button>
+              <button type="button" class="testimonials__review-btn">&gt;</button></div>
+            
+           </div></div>
+         
+         </div>
+      
       </section>
-      <article>
-        <h2>Trending stories</h2>
-        <a href="View all"></a>
-        <ul>
-          <li>
+      <article class="trending section">
+        <div class="container"> <div class="trending__meta"><h2 class="trending__title">Trending stories</h2>
+          <a href="View all" class="trending__more-link link"></a></div>
+        
+        <ul class="trending-stories list">
+          <li class="trending-stories__list">
             <img
               src="./images/trending-stories/taking-a-healing.jpg"
               alt="taking a healing holiday"
-              width="261"
-              height="231"
+              width="260"
+              height="230"
             />
-            <h3>The many benefits of taking a healing holiday</h3>
-            <p>‘Helaing holidays’ are on the rise tohelp maximise your health and happines...</p>
-            <a href="">Read more</a>
+            <h3 class="trending-stories__title">The many benefits of taking a healing holiday</h3>
+            <p class="trending-stories__text">‘Helaing holidays’ are on the rise tohelp maximise your health and happines...</p>
+            <a href="" class="trending-stories__link">Read more</a>
           </li>
-          <li>
+          <li class="trending-stories__list">
             <img
               src="./images/trending-stories/kyoto-restaurant.jpg"
               alt="Kyoto restaurant"
-              width="261"
-              height="231"
+              width="260"
+              height="230"
             />
-            <h3>The best Kyoto restaurant to try Japanese food</h3>
-            <p>From tofu to teahouses, here’s our guide to Kyoto’s best restaurants to visit...</p>
-            <a href="">Read more</a>
+            <h3 class="trending-stories__title">The best Kyoto restaurant to try Japanese food</h3>
+            <p class="trending-stories__text">From tofu to teahouses, here’s our guide to Kyoto’s best restaurants to visit...</p>
+            <a href="" class="trending-stories__link">Read more</a>
           </li>
-          <li>
+          <li class="trending-stories__list">
             <img
               src="./images/trending-stories/chichen-itza.jpg"
               alt="Chichen Itza"
-              width="261"
-              height="231"
+              width="260"
+              height="230"
             />
-            <h3>Skip Chichen Itza and head to this remote Yucatan</h3>
-            <p>
+            <h3 class="trending-stories__title">Skip Chichen Itza and head to this remote Yucatan</h3>
+            <p class="trending-stories__text">
               It’s remote and challenging to get, but braving the jungle and exploring these ruins
               without the...
             </p>
-            <a href="">Read more</a>
+            <a href="" class="trending-stories__link">Read more</a>
           </li>
-          <li>
+          <li class="trending-stories__list">
             <img
-              src="./images/trending-stories/surf’s-up.jpg"
+              src="./images/trending-stories/surfs-up.jpg"
               alt="Surf’s up"
-              width="261"
-              height="231"
+              width="260"
+              height="230"
             />
-            <h3>Surf’s up at these beginner spots around the world</h3>
-            <p>
+            <h3 class="trending-stories__title">Surf’s up at these beginner spots around the world</h3>
+            <p class="trending-stories__text">
               If learning to surf has in on your to- do list for a while, the good news is: it’s
               never too late...
             </p>
-            <a href="">Read more</a>
+            <a href="" class="trending-stories__link">Read more</a>
           </li>
-        </ul>
+        </ul></div>
+       
       </article>
     </main>
     <footer>
