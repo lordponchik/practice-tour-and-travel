@@ -1,0 +1,19 @@
+body{
+color: $primary-text-color;
+background-color: $primary-bg-color;  
+font-family: 'Inter', sans-serif;
+font-weight: 400;
+font-size: 17px;
+line-height: 1.8;
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.link{
+    text-decoration: none;
+}
+.list{
+    list-style: none;
+}

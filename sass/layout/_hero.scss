@@ -1,0 +1,61 @@
+.hero__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero__title{
+margin-bottom: 70px;
+
+font-weight: 700;
+font-size: 64px;
+line-height: 1.25;
+color: $site-nav-color-active;
+}
+.hero__text{
+    position: relative;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+
+font-weight: 600;
+font-size: 22px;
+line-height: 1.23;
+
+color: $site-nav-color-active;
+
+&:after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 32px;
+    height: 2px;
+
+    background-color: $site-nav-color-active;
+}
+}
+.hero__form{
+    @include flex-box;
+    margin-bottom: 40px
+}
+.hero__select{
+    @include flex-item;
+
+    position: relative;
+    min-width: 220px;
+    height: 52px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+    font-size: 15px;
+color: $form-holiday-color;
+border: 0.8px solid $form-holiday-color-border;
+border-radius: 6px;
+    background-image: url(../../images/arrow-down.svg);
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+    background-position-y: center;
+        -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; 
+}

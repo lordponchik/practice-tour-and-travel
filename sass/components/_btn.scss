@@ -1,0 +1,22 @@
+.btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 132px;
+    height: 44px;
+    border-style: none;
+    border: 1px solid $accent-color;
+    border-radius: 8px;
+
+    font-size: 15px;
+    background-color: $primary-bg-color;
+    color: $accent-color;    
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+        color: $primary-bg-color;    
+    }
+
+}

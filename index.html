@@ -5,94 +5,135 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tour and travel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+  />
+    <link rel="stylesheet" href="./css/main.min.css">
   </head>
   <body>
-    <header>
-      <nav>
-        <!-- Изменить логотип с png на svg -->
-        <a href=""><img src="./images/logo.png" alt="Логотип" width="41" height="41" /></a>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">Destinations</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Partner</a></li>
-        </ul>
-        <ul>
-          <li><button type="button">Login</button></li>
-          <li><button type="button">Register</button></li>
-        </ul>
-      </nav>
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <a href="" class="logo">
+            <svg width="41" height="41" class="logo__icon">
+              <use href="./images/sprite.svg#icon-logo"></use>
+            </svg></a>
+          <ul class="site-nav list">
+            <li class="site-nav__list site-nav__list--active"><a href="" class="site-nav__link site-nav__link--active link">Home</a></li>
+            <li class="site-nav__list"><a href="" class="site-nav__link link">Destinations</a></li>
+            <li class="site-nav__list"><a href="" class="site-nav__link link">About</a></li>
+            <li class="site-nav__list"><a href="" class="site-nav__link link">Partner</a></li>
+          </ul>
+          <ul class="auth-nav list">
+            <li class="auth-nav__list"><button type="button" class="auth-nav__btn btn">Login</button></li>
+            <li class="auth-nav__list"><button type="button" class="auth-nav__btn btn">Register</button></li>
+          </ul>
+        </nav>
+      </div>
+      
     </header>
     <main>
-      <section>
-        <h1>Explore and Travel</h1>
-        <p>Holiday finder</p>
-        <!-- Добавить форму -->
-        <ul>
-          <li>Location</li>
-          <li>Activity</li>
-          <li>Grade</li>
-          <li>Date</li>
-        </ul>
-        <button type="button">Explore</button>
-        <!-- Изменить изображение с png на svg -->
-        <img
-          src="./images/explore-and-travel.png"
-          alt="explore and travel"
-          width="687"
-          height="654"
-        />
+      <section class="hero section">
+        <div class="container hero__container">
+          <div class="hero-meta">
+            <h1 class="hero__title">Explore and Travel</h1>
+            <p class="hero__text">Holiday finder</p>
+            <form class="hero__form">
+              <select class="hero__select"> 
+                <option>Location</option>
+              </select>
+              <select class="hero__select">
+                <option>Activity</option>
+              </select>
+              <select class="hero__select">
+                <option>Grade</option>
+              </select>
+              <select class="hero__select">
+                <option>Date</option>
+              </select>
+              
+            </form>
+            <input type="submit" class="btn" value="Explore">
+           </div>
+          
+          <img
+            src="./images/explore-and-travel.png"
+            alt="explore and travel"
+            width="687"
+            height="654"
+          class="hero__img"
+          />
+        </div>
+      </section>   
+        
+      <section class="explore section">
+        <div class="container explore__container">  
+          <img
+            src="./images/explore-the-world.png"
+            alt="explore the world"
+            width="659"
+            height="534" class="explore__img"
+          />
+          <div class="explore__meta">  <h2 class="explore__title">A new way to explore the world</h2>
+            <p class="explore__text">
+              For decades travellers have reached for Lonely Planet books when looking to plan and
+              execute their perfect trip, but now, they can also let Lonely Planet Experiences lead the
+              way
+            </p>
+            <a href="" class="explore__link btn link">Learn more</a></div>
+        </div>
+      
       </section>
-      <section>
-        <!-- Изменить изображение с png на svg -->
-        <img
-          src="./images/explore-the-world.png"
-          alt="explore the world"
-          width="659"
-          height="534"
-        />
-        <h2>A new way to explore the world</h2>
-        <p>
-          For decades travellers have reached for Lonely Planet books when looking to plan and
-          execute their perfect trip, but now, they can also let Lonely Planet Experiences lead the
-          way
-        </p>
-        <a href="">Learn more</a>
-      </section>
-      <section>
-        <h2>Featured destinations</h2>
-        <a href="">View all</a>
-        <ul>
-          <li>
-            <img src="./images/raja-ampat.jpg" alt="Raja Ampat" width="261" height="332" />
-            <h3>Raja Ampat</h3>
-            <p>Indonesia</p>
-          </li>
-          <li>
-            <img src="./images/fanjingshan.jpg" alt="Fanjingshan" width="261" height="332" />
-            <h3>Fanjingshan</h3>
-            <p>China</p>
-          </li>
-          <li>
-            <img src="./images/vevey.jpg" alt="Switzerland" width="261" height="332" />
-            <h3>Vevey</h3>
-            <p>Switzerland</p>
-          </li>
-          <li>
-            <img src="./images/skadar.jpg" alt="Skadar" width="261" height="332" />
-            <h3>Skadar</h3>
-            <p>Montenegro</p>
-          </li>
-        </ul>
-      </section>
-      <section>
-        <h2>Guides by Thousand Sunny</h2>
-        <p>
-          Packed with tips and advice from our on-the-ground experts, our city guides app (iOS and
-          Android) is the ultimate resource before and during a trip.
-        </p>
-        <a href="" download>Download</a>
-        <img src="./images/guides.png" alt="Guides by Thousand Sunny" width="599" height="542" />
+      <section class="featured-destinations section">
+        <div class="container">
+          <div class="featured-destinations__meta"><h2 class="featured-destinations__title">Featured destinations</h2>
+            <a href="" class="featured-destinations__link link">View all <svg  width="10" height="12" ><use href="./images/sprite.svg#icon-arrow-right"></use></svg></a></div>
+          
+          <ul class="destinations-menu list">
+            <li class="destinations-menu__list">
+              <img src="./images/raja-ampat.jpg" alt="Raja Ampat" width="270" height="332" class="destinations-menu__img"/>
+              <div class="destinations-menu__meta">
+                <h3 class="destinations-menu__title">Raja Ampat</h3>
+                <p class="destinations-menu__text">Indonesia</p>
+              </div>
+              
+            </li>
+            <li class="destinations-menu__list">
+              <img src="./images/fanjingshan.jpg" alt="Fanjingshan" width="270" height="332" class="destinations-menu__img"/>
+              <div class="destinations-menu__meta"><h3 class="destinations-menu__title">Fanjingshan</h3>
+                <p class="destinations-menu__text">China</p></div>
+              
+            </li>
+            <li class="destinations-menu__list">
+              <img src="./images/vevey.jpg" alt="Switzerland" width="270" height="332" class="destinations-menu__img"/>
+              <div class="destinations-menu__meta"><h3 class="destinations-menu__title">Vevey</h3>
+                <p class="destinations-menu__text">Switzerland</p></div>
+              
+            </li>
+            <li class="destinations-menu__list">
+              <img src="./images/skadar.jpg" alt="Skadar" width="270" height="332" class="destinations-menu__img"/>
+              <div class="destinations-menu__meta"><h3 class="destinations-menu__title">Skadar</h3>
+                <p class="destinations-menu__text">Montenegro</p></div>
+              
+            </li>
+          </ul>
+        </section></div>
+        
+      <section class="guides section">
+        <div class="container guides__container"> 
+          <div class="guides__meta"><h2 class="guides__title">Guides by Thousand Sunny</h2>
+            <p class="guides__text">
+              Packed with tips and advice from our on-the-ground experts, our city guides app (iOS and
+              Android) is the ultimate resource before and during a trip.
+            </p>
+            <a href="" download class="btn link">Download</a></div>
+          
+          <img src="./images/guides.png" alt="Guides by Thousand Sunny" width="599" height="542" /></div>
+       
       </section>
       <section>
         <h2>Testimonials</h2>

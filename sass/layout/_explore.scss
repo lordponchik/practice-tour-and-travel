@@ -1,0 +1,21 @@
+.explore__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.explore__meta{
+    width: 480px;
+}
+.explore__title{
+    margin-bottom: 20px;
+
+font-weight: 700;
+font-size: 36px;
+line-height: 1.39;
+color: $secondary-text-color;
+}
+.explore__text{
+    margin-bottom: 30px;
+    
+    font-weight: 300;    
+}
