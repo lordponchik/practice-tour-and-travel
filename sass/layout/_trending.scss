@@ -2,10 +2,59 @@
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
+    margin-bottom: 50px;
+}
+.trending__title{
+        font-size: 36px;
+        line-height: 1.4;
+        color: $secondary-text-color;
+}
+.trending__more-link{
+    color: #fb8f1d;
+        fill: none;
+        stroke: #fb8f1d;
+        stroke-width: 6;
+    &:hover,
+    &:focus{
+        color: #7d7987;
+        stroke: #7d7987;
+    }                
 }
 .trending-stories{
     @include flex-box();
 }
 .trending-stories__list{
     @include flex-item();
+    display: flex;
+    flex-direction: column;
+}
+.trending-stories_description{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+.trending-stories__title{
+    margin-bottom: 10px;
+
+    font-size: 19px;
+    line-height: 1.6;  
+    color: $secondary-text-color;
+}
+.trending-stories__text{
+    flex-grow: 1;
+    margin-bottom: 20px;
+
+        font-size: 15px;
+        line-height: 1.73;
+}
+.trending-stories__link{
+        font-weight: 600;
+        font-size: 15px;
+        color: $accent-color;
+
+        &:hover,
+            &:focus {
+                color: #7d7987;
+                stroke: #7d7987;
+            }
 }
