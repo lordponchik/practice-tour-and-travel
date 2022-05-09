@@ -2,16 +2,37 @@
     margin-top: 45px;
 }
 .nav{
-    display: flex;
-    align-items: center;
+    @media screen and (max-width: 767px) {
+           text-align: center;
+        }
+    @media screen and (min-width: 768px){
+        display: flex;
+        align-items: center;
+    }    
 }
 .site-nav{
-    display: flex;
+    @media screen and (max-width: 479px) {
+            margin-bottom: 18px;
+        }
+    @media screen and (min-width:480px){
+        display: flex;
+    }    
+         @media screen and (min-width:480px) and (max-width: 767px){
+      justify-content: space-between;
+}
+        @media screen and (min-width: 768px){
     margin-left: auto;
 }
+}
 .site-nav__list{
-    position: relative;
-    margin-right: 35px;
+    position: relative;    
+
+    @media screen and (min-width: 768px){
+        margin-right: 15px;
+    }
+        @media screen and (min-width: 1200px) {
+            margin-right: 35px;
+        }
 
     &:hover::after,
     &:focus::after{
@@ -23,7 +44,7 @@
         bottom: 0;
         left: 0;
        background-color: $accent-color;
-    }
+    }    
 }
 .site-nav__link{
     display: block;
@@ -43,8 +64,21 @@
     }
 }
 .auth-nav{
-    display: flex;
+    @media screen and (min-width: 480px){
+        display: flex;
+    } 
+        @media screen and (min-width: 480px) and (max-width: 767px) {
+            justify-content: center;
+        }
 }
 .auth-nav__list:not(:last-child){
-    margin-right: 18px;
+    @media screen and (max-width: 479px) {
+            margin-bottom: 18px;
+    }
+    @media screen and (min-width: 480px){
+        margin-right: 18px;
+    }    
+}
+.auth-nav__btn{
+    margin: 0 auto;
 }

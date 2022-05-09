@@ -117,7 +117,9 @@ display: block;
     }
 }
 .social__link{
-display: block;
+display: flex;
+align-items: center;
+justify-content: center;
 color: $secondary-text-color;
 fill: currentColor;
 
@@ -125,8 +127,4 @@ fill: currentColor;
     &:focus{
         color: $accent-color;
     }
-}
-.social__icon{
-    width: 25px;
-    height: 20px;
 }
