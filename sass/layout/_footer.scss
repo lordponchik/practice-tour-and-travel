@@ -5,15 +5,26 @@
 padding-bottom: 30px;
 }
 .footer__top{
-    display: flex;   
-    margin-bottom: 75px; 
+    @media screen and (max-width: 1199px) {
+            text-align: center;
+        }
+    @media screen and (min-width: 768px){
+             display: flex;
+            margin-bottom: 75px;
+            flex-wrap: wrap;
+    }
 }
-.footer__description{
-    width: 400px;
-    margin-right: 100px;
-        display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+.footer__description{  
+    @media screen and (min-width: 1200px) {
+            flex-grow: 1;
+        }
+            @media screen and (min-width: 1200px){
+            width: 400px;
+                margin-right: 100px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
 }
 
 .footer__text{
@@ -29,7 +40,12 @@ padding-bottom: 30px;
     color: $footer-text-color;
 }
 .destinations{
-    flex-grow: 0.5;
+    @media screen and (max-width: 767px) {
+            box-shadow: 0px -5px 5px -5px rgba(34, 60, 80, 0.6);
+        }
+    @media screen and (min-width: 768px) {
+            flex-grow: 0.5;
+        }    
 }
 .destinations__title{
     font-size: 19px;
@@ -50,7 +66,12 @@ padding-bottom: 30px;
         }
 }
 .shop{
-    flex-grow: 0.5;
+    @media screen and (max-width: 767px){
+        box-shadow: 0px -5px 5px -5px rgba(34, 60, 80, 0.6);
+    }
+       @media screen and (min-width: 768px) {
+            flex-grow: 0.5;
+        }
 }
 .shop__title{
 font-size: 19px;
@@ -71,7 +92,12 @@ display: block;
             }
 }
 .interests{
-    flex-grow: 0.5;
+    @media screen and (max-width: 767px) {
+            box-shadow: 0px -5px 5px -5px rgba(34, 60, 80, 0.6);
+        }
+    @media screen and (min-width: 768px) {
+            flex-grow: 0.5;
+        }
 }
 .interests__title{
     font-size: 19px;
@@ -108,7 +134,7 @@ display: block;
         width: 100%;
         height: 3px;
             
-        background: $form-holiday-color-border;
+        background: rgba(34, 60, 80, 0.2);
     }
 }
 .social__list{
