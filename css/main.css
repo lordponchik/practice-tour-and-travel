@@ -258,7 +258,7 @@ img {
   color: #4a4c53;
   border: 0.8px solid #afb0b9;
   border-radius: 6px;
-  background-image: url(../../images/arrow-down.svg);
+  background-image: url("../images/arrow-down.svg");
   background-repeat: no-repeat;
   background-position-x: 90%;
   background-position-y: center;
