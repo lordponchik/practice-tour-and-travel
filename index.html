@@ -27,11 +27,17 @@
           ></a>
           <ul class="site-nav list">
             <li class="site-nav__list site-nav__list--active">
-              <a href="" class="site-nav__link site-nav__link--active link">Home</a>
+              <a href="./index.html" class="site-nav__link site-nav__link--active link">Home</a>
             </li>
-            <li class="site-nav__list"><a href="" class="site-nav__link link">Destinations</a></li>
-            <li class="site-nav__list"><a href="" class="site-nav__link link">About</a></li>
-            <li class="site-nav__list"><a href="" class="site-nav__link link">Partner</a></li>
+            <li class="site-nav__list">
+              <a href="#anchor-featured-destinations" class="site-nav__link link">Destinations</a>
+            </li>
+            <li class="site-nav__list">
+              <a href="#anchor-explore" class="site-nav__link link">About</a>
+            </li>
+            <li class="site-nav__list">
+              <a href="#anchor-testimonials" class="site-nav__link link">Partner</a>
+            </li>
           </ul>
           <ul class="auth-nav list">
             <li class="auth-nav__list">
@@ -76,7 +82,7 @@
         </div>
       </section>
 
-      <section class="explore section">
+      <section id="anchor-explore" class="explore section">
         <div class="container explore__container">
           <img
             src="./images/explore-the-world.png"
@@ -96,7 +102,7 @@
           </div>
         </div>
       </section>
-      <section class="featured-destinations section">
+      <section id="anchor-featured-destinations" class="featured-destinations section">
         <div class="container">
           <div class="featured-destinations__meta">
             <h2 class="featured-destinations__title">Featured destinations</h2>
@@ -110,7 +116,11 @@
           <ul class="destinations-menu list">
             <li class="destinations-menu__list">
               <img
-                src="./images/raja-ampat.jpg"
+                srcset="
+                  ./images/featured-destinations/raja-ampat.jpg    550w,
+                  ./images/featured-destinations/raja-ampat@2x.jpg 960w
+                "
+                src="./images/featured-destinations/raja-ampat.jpg"
                 alt="Raja Ampat"
                 width="270"
                 height="332"
@@ -123,7 +133,11 @@
             </li>
             <li class="destinations-menu__list">
               <img
-                src="./images/fanjingshan.jpg"
+                srcset="
+                  ./images/featured-destinations/fanjingshan.jpg    550w,
+                  ./images/featured-destinations/fanjingshan@2x.jpg 960w
+                "
+                src="./images/featured-destinations/fanjingshan.jpg"
                 alt="Fanjingshan"
                 width="270"
                 height="332"
@@ -136,7 +150,11 @@
             </li>
             <li class="destinations-menu__list">
               <img
-                src="./images/vevey.jpg"
+                srcset="
+                  ./images/featured-destinations/vevey.jpg    550w,
+                  ./images/featured-destinations/vevey@2x.jpg 960w
+                "
+                src="./images/featured-destinations/vevey.jpg"
                 alt="Switzerland"
                 width="270"
                 height="332"
@@ -149,7 +167,11 @@
             </li>
             <li class="destinations-menu__list">
               <img
-                src="./images/skadar.jpg"
+                srcset="
+                  ./images/featured-destinations/skadar.jpg    550w,
+                  ./images/featured-destinations/skadar@2x.jpg 960w
+                "
+                src="./images/featured-destinations/skadar.jpg"
                 alt="Skadar"
                 width="270"
                 height="332"
@@ -184,7 +206,7 @@
           />
         </div>
       </section>
-      <section class="testimonials section">
+      <section id="anchor-testimonials" class="testimonials section">
         <div class="container testimonials__container">
           <h2 class="testimonials__title">Testimonials</h2>
           <div class="testimonials__flexbox">
@@ -225,6 +247,7 @@
             </div>
             <div class="testimonials__img-block">
               <img
+                srcset="./images/edward-newgate.jpg 550w, ./images/edward-newgate@2x.jpg 960w"
                 src="./images/edward-newgate.jpg"
                 alt="Edward Newgate"
                 width="384"
@@ -253,6 +276,10 @@
           <ul class="trending-stories list">
             <li class="trending-stories__list">
               <img
+                srcset="
+                  ./images/trending-stories/taking-a-healing.jpg    550w,
+                  ./images/trending-stories/taking-a-healing@2x.jpg 960w
+                "
                 src="./images/trending-stories/taking-a-healing.jpg"
                 alt="taking a healing holiday"
                 width="271"
@@ -271,6 +298,10 @@
             </li>
             <li class="trending-stories__list">
               <img
+                srcset="
+                  ./images/trending-stories/kyoto-restaurant.jpg    550w,
+                  ./images/trending-stories/kyoto-restaurant@2x.jpg 960w
+                "
                 src="./images/trending-stories/kyoto-restaurant.jpg"
                 alt="Kyoto restaurant"
                 width="271"
@@ -289,6 +320,10 @@
             </li>
             <li class="trending-stories__list">
               <img
+                srcset="
+                  ./images/trending-stories/chichen-itza.jpg    550w,
+                  ./images/trending-stories/chichen-itza@2x.jpg 960w
+                "
                 src="./images/trending-stories/chichen-itza.jpg"
                 alt="Chichen Itza"
                 width="271"
@@ -308,6 +343,10 @@
             </li>
             <li class="trending-stories__list">
               <img
+                srcset="
+                  ./images/trending-stories/surfs-up.jpg    550w,
+                  ./images/trending-stories/surfs-up@2x.jpg 960w
+                "
                 src="./images/trending-stories/surfs-up.jpg"
                 alt="Surf’s up"
                 width="271"
